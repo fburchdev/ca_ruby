@@ -1,0 +1,1 @@
+my_hash = {"rock" => 1, "paper" => 2, "scissors" => 3}
