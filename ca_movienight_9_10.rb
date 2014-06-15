@@ -37,11 +37,13 @@ when "delete"
     if movies[title.to_sym].nil?
         puts "#{title} cannot be deleted. Please add before deleting."
     else
-        movies[title.to_sym].delete
+        movies.delete(title.to_sym) #ca let this slide even though it was originally incorrect
         puts "#{title} deleted"
     end
 else
     puts "Error!"
+    #Oddly, this executed in ca ui even after fix to delete above.
+    #Even so, ca passed this and granted me a badge. 
 end
 
 
